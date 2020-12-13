@@ -1,0 +1,114 @@
+---
+title: "Introduction to Shiny Apps"
+subtitle: "bmRn CSM: Building applications with R"
+comment: "*shiny apps and flexdashboard*"
+date: '`r Sys.Date()`'
+author:
+  - "Martin Frigaard"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(reprex)
+library(xaringan)
+library(pagedown)
+library(xaringanthemer)
+# folders
+folders <- c("code", "data", "img", "pdfs")
+purrr::map(.x = folders, .f = fs::dir_create)
+knitr::opts_chunk$set(warning = FALSE,
+                      message = FALSE,
+                      eval = TRUE,
+                      fig.align = "center",
+                      dpi = 320,
+                      fig.height = 4,
+                      fig.path = "img/")
+options(width = 60,
+        max.print = 60)
+# download.file(url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/shiny.png", 
+              # destfile = "img/shiny.png")
+```
+
+```{r xaringan-themer-and-xaringan-inf_mr(), include=FALSE, warning=FALSE}
+xaringanthemer::style_duo_accent(primary_color = "#035AA6", 
+                                 secondary_color = "#03A696")
+# xaringan::inf_mr() # use for instant knitting and reviewing
+```
+
+class: inverse, center, top
+background-image: url(img/shiny.png)
+background-position: 50% 70%
+background-size: 35%
+
+# `Shiny` = Web Applications with R
+
+---
+class: left, top
+background-image: url(img/shiny.png)
+background-position: 95% 8%
+background-size: 8%
+
+# Load the packages
+
+<br><br><br>
+
+```{r packages, eval=FALSE}
+install.packages(c("tidyverse", "inspectdf",
+                   "shiny", "flexdashboard",
+                   "reactable"))
+library(tidyverse)
+library(shiny)
+library(inspectdf)
+library(flexdashboard)
+library(reactable)
+```
+
+
+---
+class: left, top
+background-image: url(img/shiny.png)
+background-position: 95% 8%
+background-size: 12%
+
+# Outline
+
+<br>
+
+--
+
+## Recap `flexdashboard`
+
+--
+
+## Shiny apps
+
+--
+
+## **Reactivity**
+
+--
+
+## **Design and User Interface (UI)**
+
+
+---
+class: left, top
+background-image: url(img/shiny.png)
+background-position: 95% 8%
+background-size: 8%
+
+# Materials
+
+## Slides
+
+## Exercises
+
+## RStudio Project
+
+https://rstudio.cloud/project/2021718
