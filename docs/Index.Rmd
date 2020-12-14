@@ -764,6 +764,6 @@ background-size: 12%
 
 ```{r chrome_print, eval=FALSE, include=FALSE, echo=FALSE}
 fs::dir_create("pdfs")
-pagedown::chrome_print(input = "Index.html", 
+pagedown::chrome_print(input = "Index.html", timeout = 90,
                        output = "pdfs/intro-to-shiny-slides.pdf")
 ```

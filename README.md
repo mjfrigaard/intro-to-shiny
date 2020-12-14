@@ -1,8 +1,8 @@
 # BioMarin R Training: 
 
-1. [R Workflow Best Practices](https://mjfrigaard.github.io/r-meetup-tutorials/bk00_workflow-best-practices.html)
+1. [Introduction to R Programming](https://mjfrigaard.github.io/intro-to-r-programming/Index.html#1)
 
-2. [Introduction to R Programming](https://mjfrigaard.github.io/r-meetup-tutorials/bk01_functions-and-objects.html)
+2. [R Workflow Best Practices](mjfrigaard.github.io/r-workflow-best-practices/index.html#1)
 
 3. [Reproducible Data Analysis With R](https://mjfrigaard.github.io/rep-res-rmarkdown/Index.html#1)
 
